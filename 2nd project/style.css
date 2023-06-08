@@ -1,0 +1,41 @@
+header{
+    background-color: #f8f8f8;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 1em;
+    
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #707070;
+    font-size: 1rem;
+    font-family: 'Ubuntu' , sans-serif;
+}
+
+nav a:hover{
+    
+}
+
+h1{
+    color: #143774;
+    font-size: 3.375rem;
+    font-family: 'Lora', sans-serif;
+    text-align: center;
+}
+
+.subtitle{
+    color: #1792D2;
+    font-size: 1rem;
+    font-family: 'Ubuntu' , sans-serif;
+    text-align: center;
+}
