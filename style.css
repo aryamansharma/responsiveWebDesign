@@ -3,16 +3,23 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-size: 1.125rem;
+    font-family: sans-serif;
+    color: #707070;
 }
 
 .container{
+    width: 95%;
     max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 h1{
     font-size: 3rem;
+    text-align: center;
+}
+
+h1 span{
+    color: #B7832F;
 }
 
 h2{
@@ -21,4 +28,47 @@ h2{
 
 .columns{
     display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.col-third{
+    background-color: #312614;
+    color: white;
+    padding: 1em;
+}
+
+.col-1{
+    width: 20%;
+}
+
+.col-2{
+    width: 45%;
+}
+
+.col-3{
+    width: 70%;
+}
+
+p{
+    margin: 0;
+}
+
+@media screen and (max-width : 850px) {
+    .columns{
+        flex-direction: column;
+        margin: 0;
+    }  
+
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 95%;
+        margin: 1em;
+    }
 }
