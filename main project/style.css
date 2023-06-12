@@ -7,25 +7,78 @@ font-family: 'Ubuntu', sans-serif;
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* =================
 Typography
 ================= */
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
+}
+
+h1 {
     font-size: 2rem;
     margin: 0;
 }
+
+a {
+    color: #1792d2;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* the logo subtitle */
 
 .subtitle {
     font-weight: 700;
     color: #1792d2;
     font-size: .75rem;
     margin: 0;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.article-info {
+    margin: 2em 0;
 }
 
 /* =================
@@ -38,14 +91,30 @@ Layout
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 header {
     background: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
+}
+
+@media (min-width : 675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    aside {
+        width: 20%;
+    }
 }
 
 /* navigation */
@@ -89,32 +158,7 @@ nav a:focus {
     font-weight: 400;
 }
 
-img {
-    max-width: 100%;
-}
-
-.conatiner-main {
-    display: flex;
-    justify-content: space-between;
-}
-
-main {
-    width: 70%;
-}
-
-.sidebar {
-    width: 20%;
-}
-
-/* .article-read-more {
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: .75rem;
-    color: #1792D2;
-    text-transform: uppercase;
-} */
-
-@media (max-width: 675px) {
+@media (max-width: 695px) {
     nav ul {
         flex-direction: column;
     }
@@ -124,18 +168,8 @@ main {
     }
 }
 
-@media (max-width: 675px) {
-    .container-nav {
-        flex-direction: column;
-    }
-
-    header {
-        text-align: center;
-    }
-}
-
 /* @media screen and (max-width : 675px) {
-    .container-nav {
+    .container-flex {
         flex-direction: column;
         justify-content: center;
     }
@@ -150,3 +184,23 @@ main {
         margin-bottom: 1em;
     }
 } */
+
+/* Article */
+
+.article-featured {
+    border-bottom: 1.5px solid #707070;
+    padding-bottom: 1em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
