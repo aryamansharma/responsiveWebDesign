@@ -45,8 +45,6 @@ nav ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 110px;
-    width: 150px;
 }
 
 nav a {
