@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.main-heading p {
+    color: #1792D2;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-heading {
+    margin: 2em 0 1.5em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 150px;
+}
+
+nav a {
+    color: #717171;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    padding-bottom: 0.5em;
+    border-bottom: 1.5px solid #717171;
+}
+
+@media (min-width:695px) {
+    .container-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+}
